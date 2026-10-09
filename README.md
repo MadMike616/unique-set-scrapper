@@ -79,12 +79,6 @@ link.exe /nologo /DLL /INCREMENTAL:NO /Brepro /MACHINE:X64 `
 
 ## Validation status
 
-Tested with D2R 3.3.93847 and D2RLoader 1.3.1-beta (PluginSDK ABI 4) on
-Windows x64. The user confirmed the unique and set item recipe works in-game
-on v0.3.0. Version 0.3.1 changes the displayed name and author metadata; the
-updated plugin loaded successfully. Socketed unique and set item behavior
-remain unverified.
-
 Third-party notices for the TOML++ and D2RLoader PluginSDK dependencies are in
 [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). This repository does not
 assign a license to the plugin's own source code.

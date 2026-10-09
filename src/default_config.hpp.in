@@ -1,0 +1,2 @@
+#pragma once
+inline constexpr char DefaultConfig[] = R"toml(@UNIQUE_RUNE_CUBE_DEFAULT_TOML@)toml";

@@ -1,0 +1,47 @@
+# Unique/Set Scrapper probabilities. Changes take effect after restarting D2R.
+
+[unique-rune-cube]
+# Percent chance that the input item is consumed and no runes are produced.
+failure-chance-percent = 30
+
+[unique-rune-cube.output-count-weights]
+# These are success-only percentages and must sum to 100.
+one = 70
+two = 25
+three = 5
+
+[unique-rune-cube.rune-weights]
+# Relative weights; the plugin normalizes them. Defaults step down 20% per rune.
+el = 100.000000
+eld = 80.000000
+tir = 64.000000
+nef = 51.200000
+eth = 40.960000
+ith = 32.768000
+tal = 26.214400
+ral = 20.971520
+ort = 16.777216
+thul = 13.421773
+amn = 10.737418
+sol = 8.589935
+shael = 6.871948
+dol = 5.497558
+hel = 4.398047
+io = 3.518437
+lum = 2.814750
+ko = 2.251800
+fal = 1.801440
+lem = 1.441152
+pul = 1.152922
+um = 0.922337
+mal = 0.737870
+ist = 0.590296
+gul = 0.472237
+vex = 0.377789
+ohm = 0.302231
+lo = 0.241785
+sur = 0.193428
+ber = 0.154743
+jah = 0.123794
+cham = 0.099035
+zod = 0.079228

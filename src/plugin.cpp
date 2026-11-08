@@ -73,7 +73,7 @@ constexpr D2RL::PluginInfo Info{
     .apiVersion = D2RL_PLUGIN_API_VERSION,
     .id = PluginId,
     .name = "Unique/Set Scrapper",
-    .version = "0.3.1",
+    .version = "0.3.2",
     .author = "MadMike",
     .description = "Transmutes one unique or set item into a chance at random runes.",
     .flags = D2RL::PluginFlags::Client,
@@ -555,7 +555,7 @@ auto Initialize(const D2RL::PluginContext* context) -> bool {
         return false;
     }
     Active.store(true, std::memory_order_release);
-    context->LogInfo("UniqueSetScrapper 0.3.1 is ready; unique and set items are accepted, and all probabilities are loaded from unique-rune-cube.toml.");
+    context->LogInfo("UniqueSetScrapper 0.3.2 is ready; unique and set items are accepted, and all probabilities are loaded from unique-rune-cube.toml.");
     return true;
 }
 

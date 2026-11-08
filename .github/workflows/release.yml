@@ -14,7 +14,7 @@ jobs:
       RELEASE_TAG: v0.3.2
     steps:
       - name: Check out release source
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
 
@@ -50,12 +50,12 @@ jobs:
           $notes = @"
           ## Unique/Set Scrapper $env:RELEASE_TAG
 
-          This DLL was built on a Windows x64 GitHub runner with CMake `--config Release`. The build log includes the compiler's Release optimization flags.
+          This DLL was built on a Windows x64 GitHub runner with CMake --config Release. The build log includes the compiler's Release optimization flags.
 
           ### Install
 
-          1. Copy `d2rl-unique-rune-cube.dll` to the active mod's `d2rloader/plugins/` directory.
-          2. Copy `unique-rune-cube.toml` to the active mod's `d2rloader/config/` directory and customize it if desired.
+          1. Copy d2rl-unique-rune-cube.dll to the active mod's d2rloader/plugins/ directory.
+          2. Copy unique-rune-cube.toml to the active mod's d2rloader/config/ directory and customize it if desired.
           3. Restart D2RLoader.
 
           ### Compatibility
@@ -64,7 +64,7 @@ jobs:
 
           ### SHA-256
 
-          `d2rl-unique-rune-cube.dll`: `$hash`
+          d2rl-unique-rune-cube.dll: $hash
           "@
           Set-Content -LiteralPath 'release-notes.md' -Value $notes -Encoding utf8
 
